@@ -43,3 +43,16 @@ If all went right, go on!
 ```
 
 Maybe, when I will have time, I will release a wrapper script.. But that day is not today, so you have to launch 5 scripts :P
+
+#Test
+Let's check if evrything works fine!
+Now you have to connect kobuki to Jetson board over USB, then turn on kobuki and wait for the green status led.
+You should be able to use it now so we will try to run a funny default app.
+
+Open 2 terminal shells and issue:
+```shell
+# First shell
+$ roslaunch kobuki_node minimal.launch --screen
+# Second shell
+$ roslaunch kobuki_keyop safe_keyop.launch --screen
+```
