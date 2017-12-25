@@ -8,7 +8,7 @@ The script is tested on Jetson TK1 with a clean ubuntu 14.04 LTS installation. I
 - Please do not do any operation during the script execution and save your work before launch it
 - Some reboots are planned at the end of some scripts; don't panic and continue to launch other scripts till the last one ;)
 
-#What will you get?
+# What will you get?
 - USB3 enabled (disabled by default)
 - Energy-saving policy configured in a better way to support a board that should run upon a robot :P
 - Chromium installed. Firefox has a lot of bugs on Jetson :( I recommend to use Chromium but, if you prefere, you can pick another one
