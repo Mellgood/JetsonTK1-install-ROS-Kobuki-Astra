@@ -9,4 +9,4 @@ cd ~ubuntu/jetsonHacksStuffs/
 git clone https://github.com/jetsonhacks/postFlash.git
 cd postFlash/
 ./configureSystem.sh
-
+sudo reboot now
