@@ -30,11 +30,15 @@ cd JetsonTK1-ROS-Kobuki-install
 chown +x *
 ```
 Now you can launch them using sequentially those commands (make sure you are on scripts folder)
-```
+```shell
 ./1-Setup-base.sh
 ./2-grinch-kernel.sh
 ./3-Install-ROS.sh
 ./4-install-indigo-kobuki.sh
+```
+Have a look to the last few lines. If you see an error, reboot and launch ./4-install-indigo-kobuki.sh again.
+If all went right, go on!
+```shell
 ./5-catkin-install-create_ws.sh
 ```
 
