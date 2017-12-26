@@ -78,4 +78,5 @@ The diagram below shows the nodes situation while opening all the four shells.
 ![alt text][diagram]
 
 
-[diagram]: https://gitlab.com/Centofanti/JetsonTK1-ROS-Kobuki-install/blob/master/Simple_keyop_with_astra_cam.png "Nodelet diagram"
+
+[diagram]: Simple_keyop_with_astra_cam.png "Nodelet diagram"
