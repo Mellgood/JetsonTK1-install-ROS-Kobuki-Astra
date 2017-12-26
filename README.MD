@@ -74,7 +74,11 @@ On the rqt_image_view screen, select the source video topic you want to observe 
 Now you have all the hardware you need to develop your amazing bots intelligence
 
 # Nodelet diagram
-The diagram below shows the nodes situation while opening all the four shells.
+When project goes bigger and bigger, graphical tools are your best friends to handle complexity of the whole system. I used the rqt_graph tool to have this nice view on the system.
+The diagram below shows the nodes situation while opening all the four shells and the topics-nodes correlation.
+Use the diagram to have a fast and graphical intuitive vision on the active topics and their parent nodes.
+
+
 ![alt text][diagram]
 
 
