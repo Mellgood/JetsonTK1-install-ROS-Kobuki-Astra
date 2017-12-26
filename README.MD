@@ -83,4 +83,4 @@ Use the diagram to have a fast and graphical intuitive vision on the active topi
 
 
 
-[diagram]: Simple_keyop_with_astra_cam.png "Nodelet diagram"
+[diagram]: img/Simple_keyop_with_astra_cam.png "Nodelet diagram"
