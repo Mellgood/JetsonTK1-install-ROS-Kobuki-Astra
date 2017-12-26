@@ -69,6 +69,13 @@ roslaunch astra_launch astra.launch
 # Fourth shell
 rqt_image_view
 ```
-On the rqt_image_view screen, select the source video topic you want to observe and enjoy
+On the rqt_image_view screen, select the source video topic you want to observe and enjoy.
 
 Now you have all the hardware you need to develop your amazing bots intelligence
+
+# Nodelet diagram
+The diagram below shows the nodes situation while opening all the four shells.
+![alt text][diagram]
+
+
+[diagram]: https://gitlab.com/Centofanti/JetsonTK1-ROS-Kobuki-install/blob/master/Simple_keyop_with_astra_cam.png "Nodelet diagram"
