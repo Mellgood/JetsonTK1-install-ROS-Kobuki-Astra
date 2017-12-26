@@ -1,5 +1,5 @@
 # Description
-This guide will let you have a full functional ROS install, with full support for Kobuki.
+This guide will let you have a full functional ROS install, with full support for Kobuki and Astra deep camera.
 The script is tested on Jetson TK1 with a clean ubuntu 14.04 LTS installation. It should work even in a non-clean environment but it has not been tested (if you do it please give me a feedback).
 
 # Notes
