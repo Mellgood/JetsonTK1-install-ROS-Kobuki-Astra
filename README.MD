@@ -2,6 +2,12 @@
 This guide will let you have a full functional ROS install, with full support for Kobuki and Astra deep camera.
 The script is tested on Jetson TK1 with a clean ubuntu 14.04 LTS installation. It should work even in a non-clean environment but it has not been tested (if you do it please give me a feedback).
 
+#Hardware configuration
+This guide is intended to be performed haveing the following hardware:
+- [JetsonTK1](http://www.nvidia.it/object/jetson-tk1-embedded-dev-kit-it.html)
+- [Kobuki](http://kobuki.yujinrobot.com/wiki/online-user-guide/)
+- [Orbbec Astra](https://orbbec3d.com/product-astra/)
+
 # Notes
 - Nvidia Jetson TK1 is not able to use wifi before you launch 1-Setup-base.sh
 - Kobuki will not work without Grinch kernel
@@ -18,7 +24,7 @@ The script is tested on Jetson TK1 with a clean ubuntu 14.04 LTS installation. I
 - Full ros-indigo-desktop installed
 - ros-indigo-kobuki and ros-indigo-kobuki-core installed
 - udev rule for kobuki created (kobuki should appear on /dev/kobuki after you replug it)
-- astra camera
+- Astra camera installed
 - udev rule for astra created (astra should appear on /dev/astra after you replug it)
 
 
@@ -71,7 +77,7 @@ rqt_image_view
 ```
 On the rqt_image_view screen, select the source video topic you want to observe and enjoy.
 
-Now you have all the hardware you need to develop your amazing bots intelligence
+Now you have all the hardware you need to develop your amazing bot intelligence
 
 # Nodelet diagram
 When project goes bigger and bigger, graphical tools are your best friends to handle complexity of the whole system. I used the rqt_graph tool to have this nice view on the system.
