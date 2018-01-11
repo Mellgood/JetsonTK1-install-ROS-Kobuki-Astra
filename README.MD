@@ -76,6 +76,8 @@ roslaunch astra_launch astra.launch
 rqt_image_view
 ```
 On the rqt_image_view screen, select the source video topic you want to observe and enjoy.
+![alt text][cam1]
+![alt text][cam2]
 
 Now you have all the hardware you need to develop your amazing bot intelligence
 
@@ -90,3 +92,5 @@ Use the diagram to have a fast and graphical intuitive vision on the active topi
 
 
 [diagram]: img/Simple_keyop_with_astra_cam.png "Nodelet diagram"
+[cam1]: img/Depth_cam.png "Nodelet diagram"
+[cam2]: img/Double_view.png "Nodelet diagram"
