@@ -35,7 +35,7 @@ mkdir installROS
 cd installROS
 git clone https://gitlab.com/Centofanti/JetsonTK1-ROS-Kobuki-install.git
 cd JetsonTK1-ROS-Kobuki-install
-chown +x *
+chmod +x *
 ```
 Now you can launch them using sequentially those commands (make sure you are on scripts folder)
 ```shell

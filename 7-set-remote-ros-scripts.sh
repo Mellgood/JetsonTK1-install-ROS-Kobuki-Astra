@@ -1,0 +1,1 @@
+mv ~ubuntu/jetsonHacksStuffs/permanent_scripts/* ~/ubuntu
