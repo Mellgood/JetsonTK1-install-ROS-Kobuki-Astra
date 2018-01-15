@@ -26,13 +26,7 @@ This guide is intended to be performed haveing the following hardware:
 - udev rule for kobuki created (kobuki should appear on /dev/kobuki after you replug it)
 - Astra camera installed
 - udev rule for astra created (astra should appear on /dev/astra after you replug it)
-- simulation-start.sh and simulation-clear.sh scripts wich add and remove config in bashrc and catkin_ws setup to enable ros network capabilities. You can use the scripts as shown below
-From /home/ubuntu/
-```shell
-./simulation-clean.sh
-./simulation-start.sh <JETSON-IP>
-./simulation-start.sh <192.168.13.17>
-```
+- simulation-start.sh and simulation-clear.sh scripts wich add and remove config in bashrc and catkin_ws setup to enable ros network capabilities.
 
 
 # Usage
@@ -62,7 +56,28 @@ If all went right, go on!
 
 Maybe, when I will have time, I will release a full automated wrapper script.. But that day is not today, so you have to launch scripts manually :P
 
-#Test
+# Simulation scripts
+To use simulation scripts: 
+## From jetson /home/ubuntu/
+```shell
+./simulation-clean.sh
+./simulation-start.sh <JETSON-IP>
+./simulation-start.sh <192.168.13.17>
+```
+## From an external pc:
+Add the following lines to your bashrc
+```shell
+export ROS_MASTER_URI=http://JETSON-IP:11311
+export ROS_HOSTNAME=YOUR-PC-IP
+```
+Then if you are using a virtual machine, probably your virtual machine runs on 10.* ip so your router may not be able to redirect your traffic from jetson back to your virtual machine.
+I solved the problem using an SSH tunnel using the following command:
+```shell
+ssh -R 11311:10.0.2.15:11311 ubuntu@192.168.43.16
+```
+Note that you only have to issue this command if you run on a virtual machine or if you have network routing problems with your configuration
+
+# Test
 Let's check if evrything works fine!
 Now you have to connect kobuki to Jetson board over USB, then turn on kobuki and wait for the green status led.
 You should be able to use it now so we will try to run a funny default app.
