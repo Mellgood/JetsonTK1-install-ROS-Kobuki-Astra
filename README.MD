@@ -26,6 +26,13 @@ This guide is intended to be performed haveing the following hardware:
 - udev rule for kobuki created (kobuki should appear on /dev/kobuki after you replug it)
 - Astra camera installed
 - udev rule for astra created (astra should appear on /dev/astra after you replug it)
+- simulation-start.sh and simulation-clear.sh scripts wich add and remove config in bashrc and catkin_ws setup to enable ros network capabilities. You can use the scripts as shown below
+From /home/ubuntu/
+```shell
+./simulation-clean.sh
+./simulation-start.sh <JETSON-IP>
+./simulation-start.sh <192.168.13.17>
+```
 
 
 # Usage
@@ -48,8 +55,9 @@ Have a look to the last few lines. If you see an error, reboot and launch ./4-in
 If all went right, go on!
 ```shell
 ./5-catkin-install-create_ws.sh
-./6-install-astra-camera
-./7-remove-downloads.sh
+./6-install-astra-camera.sh
+./7-set-remote-ros-scripts.sh
+./8-remove-downloads.sh
 ```
 
 Maybe, when I will have time, I will release a full automated wrapper script.. But that day is not today, so you have to launch scripts manually :P
