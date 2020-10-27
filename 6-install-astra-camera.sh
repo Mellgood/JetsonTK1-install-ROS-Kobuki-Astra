@@ -14,7 +14,7 @@ catkin init
 catkin init --workspace .
 catkin config --init
 catkin build
-cd /src
+cd src
 git clone https://github.com/orbbec/ros_astra_launch.git
 git clone https://github.com/orbbec/ros_astra_camera.git
 cd ~/catkin_ws/
